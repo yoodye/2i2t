@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: red;
+}
+.menu {
+    width: 100%;
+    height: 150px;
+    background-color: salmon;
+}
+.conteudo-musica {
+    width: 100%;
+}
+.rodape {
+    width: 100%;
+    background-color: slategray;
+    text-align: center;
+}
+.desc-estilo {
+    width: 100%;
+    background-color: tan;
+}
+.desc-solo {
+    width: 100%;
+    background-color: teal;
+}
+.desc-grupo {
+    width: 100%;
+    background-color: tan;
+}
+.desc-banda {
+    width: 100%;
+    background-color: teal;
+}
+.desc-app {
+    width: 100%;
+    background-color: tan;
+}
+img/michael.jpeg {
+    width: 10%;
+}
