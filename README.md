@@ -1,2 +1,2 @@
 # Aulas do Segundo Trimestre
-Evelyn Janine de Freitas Faria - nº09
+Yohana Brenzan de Andrade - Nº:34
