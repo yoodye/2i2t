@@ -2,13 +2,92 @@
     padding: 0;
     margin: 0;
 }
-body{
+:root {
+    --fundo: rgb(4, 0, 255);
+    --fonte: rgb(84, 84, 204);
+    --hover: rgb(0, 0, 0);
+}
+body {
     background-color: rgb(84, 84, 204);
 }
-.menu{
+.menu {
     width: 100%;
     height: 60px;
     background-color: rgb(138, 138, 236);
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+header {
+    background-color: var(--fundo);
+    width: 100%;
+    position: sticky;
+    top: 0%;
+}
+.logo {
+    display: inline-block;
+    color: var(--fonte);
+    font-size: 32px;
+}
+.nav {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: var(--fundo);
+    overflow: hidden;
+}
+.nav a {
+    display: block;
+    padding: 30px;
+    color: var(--fonte);
+}
+.na a:hover {
+    background-color: var(--hover);
+}
+.nav {
+    max-height: 0;
+    transition: max-height .5s ease-out;
+}
+.hamburguer {
+    cursor: pointer;
+    float: right;
+    padding: 35px 20px;
+}
+.hamb-line {
+    background-color: var(--fonte);
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+}
+.hamb-line::before
+.hamb-line::after {
+    background: var(--fonte);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all 2s ease-out;
+    width: 100%;
+}
+.hamb-line::before {
+    top: 5px;
+}
+.hamb-line::before {
+    top: -5px;
+}
+.side-menu {
+    display: none;
+}
+.side-menu:checked ~ nav {
+    max-width: 100%;
+}
+.side-menu:checked ~ .hamburguer .hamb-line {
+    background: transparent;
 }
 .conteudo-musica{
     width: 100%;
