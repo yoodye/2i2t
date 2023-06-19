@@ -1,2 +1,2 @@
-# Aulas do Segundo Trimestre
-Yohana Brenzan de Andrade - Nº:34
+Aulas do segundo trimestre
+Nome:michelangelo Numero: 26
