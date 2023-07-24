@@ -4,14 +4,14 @@
 
 }
 :root{
-    --fundo: rgba(11, 11, 63, 0.863);
-    --fonte: rgb(78, 5, 78);
-    --hover: rgb(28, 1, 46,);
+    --fonte: rgb(39, 38, 38);
+    --fundo: #e0e0e0;
+    --hover: rgb(83, 134, 211);
 
 
 }
 body{
-    background-color: rgba(67, 69, 100, 0.822);
+    background-color: rgba(86, 100, 231, 0.822);
 }
 a {
     text-decoration: none;
@@ -21,7 +21,7 @@ ul{
 }
 .header{
 
-    background-color: var(--fonte);
+    background-color: var(--fundo);
     width: 100%;
     position: sticky;
     top: 0;
@@ -30,11 +30,11 @@ ul{
 .logo{
     display: inline-block;
    color: var(--fundo);
-   font-size: 32px;
+   font-size: 12px;
   
 }
 #logo{
-  height: 10vh;
+  height: 5vh;
 
 }
 .nav{
@@ -110,31 +110,31 @@ ul{
 }
 .rodape{
     width: 100%;
-    background-color: rgb(199, 31, 214);
+    background-color: rgb(104, 142, 211);
     text-align: center  ;
 }
 .desc-estilo{
     width: 100;
-   background-color: rgb(118, 17, 185);
+   background-color: rgb(17, 197, 92);
 
 }
 .desc-solo{
     width: 100;
-background-color: rgb(163, 9, 184);
+background-color: rgb(93, 194, 107);
 
 }
 .desc-grupo{
     width: 100;
-background-color: rgb(137, 9, 168);
+background-color: rgb(221, 52, 52);
 
 }
 .desc-banda{
     width: 100;
-background-color: rgb(131, 8, 131) ;
+background-color: rgb(64, 77, 148) ;
 }
 .desc-app{
     width: 100;
-background-color: rgb(141, 6, 134);
+background-color: rgb(79, 124, 221);
 }
 .img-ini{
     width: 100%;
