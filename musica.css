@@ -105,13 +105,26 @@ ul{
     top: 0;
 }
 .conteudo-musica{
-     width: 100%;
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-areas: "def def";
 
 }
 .rodape{
     width: 100%;
     background-color: rgb(104, 142, 211);
     text-align: center  ;
+}
+.definicao{
+    display: block;
+    width: 100vw;
+    grid-area: def;
+}
+.img-deinicao{
+    display: none;
+}
+.decricao{
+    width: 100vw;
 }
 .desc-estilo{
     width: 100;
