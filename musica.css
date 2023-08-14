@@ -30,11 +30,11 @@ ul{
 .logo{
     display: inline-block;
    color: var(--fundo);
-   font-size: 12px;
+   font-size: 32px;
   
 }
 #logo{
-  height: 5vh;
+  height: 10vh;
 
 }
 .nav{
@@ -105,14 +105,14 @@ ul{
     top: 0;
 }
 .conteudo-musica{
-    display: grid;
-    grid-template-columns: 33% 34% 33%;
-    grid-template-areas: "def def";
-
+    display: flex;
+     width: 100vw;
+     flex-direction: column;
 }
+
 .rodape{
     width: 100%;
-    background-color: rgb(104, 142, 211);
+    background-color: rgba(255, 255, 255, 0.39);
     text-align: center  ;
 }
 .definicao{
@@ -120,77 +120,124 @@ ul{
     width: 100vw;
     grid-area: def;
 }
-.img-deinicao{
+.img-definicao{
     display: none;
+
 }
-.decricao{
-    width: 100vw;
+.descricao{
+    width:100vw;
 }
 .desc-estilo{
     width: 100;
-   background-color: rgb(17, 197, 92);
+   background-color: rgba(0, 0, 0, 0.39);
 
 }
-.desc-solo{
-    width: 100;
-background-color: rgb(93, 194, 107);
 
-}
-.desc-grupo{
-    width: 100;
-background-color: rgb(221, 52, 52);
-
-}
-.desc-banda{
-    width: 100;
-background-color: rgb(64, 77, 148) ;
-}
-.desc-app{
-    width: 100;
-background-color: rgb(79, 124, 221);
-}
 .img-ini{
     width: 100%;
+ 
 }
-@media screen and (min-width: 768px){
-   .nav{
-    max-height: none;
-    top: 0;
-    position: relative;
-    float: right;
-    width: fit-content;
-    background-color: transparent;
-   }
-   .menu{
-    float: left;
-   }
-   .menu a:hover{
-    background-color: transparent;
-    color: var(--hover);
-   }
-   .hamburger{
-    display: none;
-   }
-   #logo{
-    width:25vh;
-    height: 25vh; 
+.info {
+    width: 100vw;
+
+}
+div[class^="item-"]{
+    background-color: rgb(215, 236, 250);
+    margin-top: 2px;
+    grid-area: "item";
+
+}
+.info{
+    display: grid;
+}
+@media screen and (min-width: 820px){
+    .nav{
+     max-height: none;
+     top: 0;
+     position: relative;
+     float: right;
+     width: fit-content;
+     background-color: transparent;
+    }
+    .menu li{
+        float: left;
+    }
+    .menu{
+     float: left;
+    }
+    .menu a:hover{
+     background-color: transparent;
+     color: var(--hover);
+    }
+    .hamburger{
+     display: none;
+    }
+    #logo{
+     width:25vh;
+     height: 25vh; 
+    }
+    .conteudo-musica{
+     display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "def def";
+    }
+    .definicao{
+   display: flex;
+   width: 100%;
+    
+    }
+    .img-definicao{
+        display: block;
+        text-align: end;
+        height: 5px;
+        width: 10vh;
+    
+    }
+    .descricao{
+        width:50vw;
+    } 
+    .info{
+         grid-template-columns: 50% 50%;
+        grid-template-areas: "item" "item";    
+        }
+        div[class^="item-"]{
+            margin-right: 2px;
+        }
+    }
     
 
-   }
-    }
-
    
    
-   @media screen and (min-width: 1280px){
-       .menu{
-          height: 200px;
-          background-color: rgb(37, 37, 241);
-          font-size: 64px;
-       }
-       .img-ini{
-           width: 50%;
-       }
-       .desc-solo{
-           display: flex;
-       }
-      }
+    @media screen and (min-width: 1024px){
+        .nav{
+         max-height: none;
+         top: 0;
+         position: relative;
+         float: right;
+         width: fit-content;
+         background-color: transparent;
+        }
+        .menu{
+         float: left;
+        }
+        .menu a:hover{
+         background-color: transparent;
+         color: var(--hover);
+        }
+        .hamburger{
+         display: none;
+        }
+        #logo{
+         width:25vh;
+         height: 25vh; 
+        }
+        .conteudo-musica{
+         display: grid;
+        grid-template-columns: 33% 34% 33%;
+        grid-template-areas: "def def def";
+        }
+        .info{
+            grid-template-columns: 33% 34% 33%;
+           grid-template-areas: "item" "item" "item";    
+           }
+        }
